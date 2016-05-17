@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Github',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'Simple_Django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "Github/templates/Github")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

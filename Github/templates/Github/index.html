@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Welcome {{ user }}</title>
+  </head>
+  <body>
+    <div class="container">
+      {% block content %}
+      <form action="." method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Search">
+      </form>
+      {% if name %}
+        Hey {{ name }}
+      {% endif %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
