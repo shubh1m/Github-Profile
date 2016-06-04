@@ -26,13 +26,14 @@
       {% endif %}
 
       <br><br><br>
+      {% if name %}
         <div class="panel panel-default table-responsive">
           <div class="panel-heading">Github</div>
-
-          <table class="table table-striped table-bordered table-hover">
-              <tr>
-                <th><img src="{{ photo }}" alt="Profile Picture" class="img-circle img-responsive center-block" height="200" width="200"></th>
-              </tr>
+          <table class="table table-bordered table-hover">
+            <tr>
+              <th><img src="{{ photo }}" alt="Profile Picture" class="img-circle img-responsive center-block" height="200" width="200"></th>
+              <th><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@{{ name }}</th>
+            </tr>
             <tbody>
               {% for key, value in details.items %}
               <tr>
@@ -43,9 +44,10 @@
             </tbody>
           </table>
         </div>
-
+      {% endif %}
+        
       {% endblock %}
-      
     </div>
+    <br><br><br><br><br><br>
   </body>
 </html>

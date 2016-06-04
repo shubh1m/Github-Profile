@@ -27,6 +27,7 @@ def index(request):
             elif(r.status_code == 200):
                 details = r.json()
                 photo = details['avatar_url']
+                name = details['login']
 
                 details = (('Name', details['name']),
                             ('Bio', details['bio']),
