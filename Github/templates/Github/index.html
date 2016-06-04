@@ -1,20 +1,51 @@
 <html>
   <head>
-    <title>Welcome {{ user }}</title>
+    <title>Github | Welcome {{ details.name }}</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Github/css/bootstrap.css' %}" />
+    <script src="{% static 'Github/css/bootstrap.js' %}"></script>
   </head>
   <body>
     <div class="container">
       {% block content %}
-      <form action="." method="POST">
+      <br><br><br><br><br><br>
+      <form action="." method="POST" class="navbar-form navbar-left" role="search">
         {% csrf_token %}
-        {{ form }}
-        <input type="submit" value="Search">
+        <div class="form-group">
+          {{ form }}
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
       </form>
-      {% if name %}
-        Hey {{ name }}
-        {{  details.blog }}
+
+      <br><br><br>
+
+      {% if status %}
+        <div class="alert alert-danger" role="alert">
+          <span aria-hidden="true">{{ status }}</span>
+        </div>
       {% endif %}
+
+      <br><br><br>
+        <div class="panel panel-default table-responsive">
+          <div class="panel-heading">Github</div>
+
+          <table class="table table-striped table-bordered table-hover">
+              <tr>
+                <th><img src="{{ photo }}" alt="Profile Picture" class="img-circle img-responsive center-block" height="200" width="200"></th>
+              </tr>
+            <tbody>
+              {% for key, value in details.items %}
+              <tr>
+                <th>{{ key }}</th>
+                <td>{{ value }}</td> 
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
       {% endblock %}
+      
     </div>
   </body>
 </html>

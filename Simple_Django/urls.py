@@ -18,12 +18,6 @@ from django.contrib import admin
 from Github import views
 
 urlpatterns = [
-	#url(r'^$', views.home, name='home'),
 	url(r'^index.html/', views.index, name='index'),
-	#url(r'^index.html/', views.Search, name='Search'),
-    #url(r'^index/', include('Github.urls')),
-    url(r'^admin/', admin.site.urls),
+	url(r'^admin/', admin.site.urls),
 ]
-
-#gupta_354@yahoo.com
-#221
