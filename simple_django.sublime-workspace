@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"a",
+				"avatar_url"
+			],
+			[
 				"pr",
 				"print"
 			],
@@ -39,7 +43,7 @@
 			"file": "Github/views.py",
 			"settings":
 			{
-				"buffer_size": 4166,
+				"buffer_size": 2292,
 				"line_ending": "Unix"
 			}
 		},
@@ -47,7 +51,7 @@
 			"file": "Github/templates/Github/index.html",
 			"settings":
 			{
-				"buffer_size": 1311,
+				"buffer_size": 1740,
 				"line_ending": "Unix"
 			}
 		},
@@ -171,15 +175,15 @@
 					"file": "Github/views.py",
 					"settings":
 					{
-						"buffer_size": 4166,
+						"buffer_size": 2292,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1671,
-								1671
+								1188,
+								1188
 							]
 						],
 						"settings":
@@ -189,7 +193,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 468.0,
+						"translation.y": 153.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -199,15 +203,15 @@
 					"file": "Github/templates/Github/index.html",
 					"settings":
 					{
-						"buffer_size": 1311,
+						"buffer_size": 1740,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								762,
-								762
+								280,
+								280
 							]
 						],
 						"settings":
@@ -217,7 +221,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 153.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

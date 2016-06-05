@@ -9,7 +9,7 @@ import collections
 def index(request):
     BASE_URL = 'https://api.github.com/users/'
     form = SearchForm(request.POST or None)
-    name = ''
+    name = None
     details = ''
     status = ''
     photo = ''
@@ -24,10 +24,12 @@ def index(request):
             print(r.status_code)
             if(r.status_code == 404):
                 status = 'User "' + name + '" does not exists.'
+                name = None
             elif(r.status_code == 200):
                 details = r.json()
+
                 photo = details['avatar_url']
-                name = details['login']
+                name = details['name']
 
                 details = (('Name', details['name']),
                             ('Bio', details['bio']),
@@ -62,47 +64,3 @@ def index(request):
         'photo': photo,
     }
     return render(request, 'index.html', context)
-    
-    '''data['Name'] = details.name
-                data['Bio'] = details.bio
-                data['UserID'] = details.login
-                data['Email'] = details.email
-                data['Company'] = details.company
-                data['Blog'] = details.blog
-                data['Location'] = details.location
-                data['Hireable'] = details.hireable
-                data['Public Repos'] = details.public_repos
-                data['Public Gists'] = details.public_gists
-                data['Followers'] = details.followers
-                data['Following'] = details.following
-
-                data = {
-                    'Name' : details['name'],
-                    'Bio' : details['bio'],
-                    'UserID' : details['login'],
-                    'Email' : details['email'],
-                    'Company' : details['company'],
-                    'Blog' : details['blog'],
-                    'Location' : details['location'],
-                    'Hireable' : details['hireable'],
-                    'Public Repos' : details['public_repos'],
-                    'Public Gists' : details['public_gists'],
-                    'Followers' : details['followers'],
-                    'Following' : details['following'],
-                }
-
-
-                    (('Name', data['name']),
-                        ('Bio', data['bio']),
-                        ('UserID', data['login']),
-                        ('Email', data['email']),
-                        ('Company', data['company']),
-                        ('Blog' , data['blog'],
-                        ('Location' , data['location'],
-                        ('Hireable' , data['hireable'],
-                        ('Public Repos' , data['public_repos'],
-                        ('Public Gists' , data['public_gists'],
-                        ('Followers' , data['followers'],
-                        ('Following' , data['following'],
-                        )
-    '''
