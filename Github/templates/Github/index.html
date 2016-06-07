@@ -1,11 +1,11 @@
 <html>
   <head>
     <title>Github | Welcome {{ name }}</title>
-    {% load staticfiles %}
+    {% load static from staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'Github/css/bootstrap.css' %}" />
-    <script src="{% static 'Github/css/bootstrap.js' %}"></script>
+    <script src="{% static 'Github/js/bootstrap.js' %}"></script>
   </head>
-  <body bgcolor="red">
+  <body bgcolor="#aed6f1 ">
     <div class="container">
       {% block content %}
       <br><br><br><br><br>
