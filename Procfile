@@ -1,1 +1,2 @@
-web: gunicorn Github.wsgi --log-file -
+web: gunicorn Simple_Django.wsgi --log-file -
+
