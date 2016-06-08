@@ -55,7 +55,7 @@
 			"file": "Github/templates/Github/index.html",
 			"settings":
 			{
-				"buffer_size": 1771,
+				"buffer_size": 2221,
 				"line_ending": "Unix"
 			}
 		},
@@ -71,7 +71,7 @@
 			"file": "Simple_Django/urls.py",
 			"settings":
 			{
-				"buffer_size": 992,
+				"buffer_size": 982,
 				"line_ending": "Unix"
 			}
 		},
@@ -160,6 +160,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Simpl",
 			"RequestContext",
 			"get"
 		],
@@ -179,7 +180,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -215,15 +216,15 @@
 					"file": "Github/templates/Github/index.html",
 					"settings":
 					{
-						"buffer_size": 1771,
+						"buffer_size": 2221,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								304,
-								304
+								387,
+								387
 							]
 						],
 						"settings":
@@ -250,8 +251,8 @@
 						"selection":
 						[
 							[
-								819,
-								819
+								1602,
+								1602
 							]
 						],
 						"settings":
@@ -261,7 +262,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 583.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -271,15 +272,15 @@
 					"file": "Simple_Django/urls.py",
 					"settings":
 					{
-						"buffer_size": 992,
+						"buffer_size": 982,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								992,
-								992
+								848,
+								848
 							]
 						],
 						"settings":
