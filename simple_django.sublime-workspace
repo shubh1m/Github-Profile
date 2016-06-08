@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"stati",
+				"staticfiles"
+			],
+			[
 				"a",
 				"avatar_url"
 			],
@@ -51,7 +55,15 @@
 			"file": "Github/templates/Github/index.html",
 			"settings":
 			{
-				"buffer_size": 1740,
+				"buffer_size": 1771,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Simple_Django/settings.py",
+			"settings":
+			{
+				"buffer_size": 3370,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +71,7 @@
 			"file": "Simple_Django/urls.py",
 			"settings":
 			{
-				"buffer_size": 850,
+				"buffer_size": 992,
 				"line_ending": "Unix"
 			}
 		},
@@ -88,10 +100,10 @@
 			}
 		},
 		{
-			"file": "Simple_Django/settings.py",
+			"file": "Procfile",
 			"settings":
 			{
-				"buffer_size": 3324,
+				"buffer_size": 47,
 				"line_ending": "Unix"
 			}
 		}
@@ -167,7 +179,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -182,8 +194,8 @@
 						"selection":
 						[
 							[
-								1188,
-								1188
+								173,
+								173
 							]
 						],
 						"settings":
@@ -193,7 +205,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 153.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -203,15 +215,15 @@
 					"file": "Github/templates/Github/index.html",
 					"settings":
 					{
-						"buffer_size": 1740,
+						"buffer_size": 1771,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								280,
-								280
+								304,
+								304
 							]
 						],
 						"settings":
@@ -228,18 +240,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "Simple_Django/urls.py",
+					"file": "Simple_Django/settings.py",
 					"settings":
 					{
-						"buffer_size": 850,
+						"buffer_size": 3370,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								850,
-								850
+								819,
+								819
 							]
 						],
 						"settings":
@@ -256,6 +268,34 @@
 				},
 				{
 					"buffer": 3,
+					"file": "Simple_Django/urls.py",
+					"settings":
+					{
+						"buffer_size": 992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								992,
+								992
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "Github/forms.py",
 					"settings":
 					{
@@ -281,7 +321,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "Github/models.py",
 					"settings":
 					{
@@ -307,7 +347,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "Github/admin.py",
 					"settings":
 					{
@@ -333,29 +373,27 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "Simple_Django/settings.py",
+					"buffer": 7,
+					"file": "Procfile",
 					"settings":
 					{
-						"buffer_size": 3324,
+						"buffer_size": 47,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3198,
-								3198
+								27,
+								27
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1734.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

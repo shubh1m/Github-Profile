@@ -20,6 +20,6 @@ from django.conf.urls.static import static
 from Github import views
 
 urlpatterns = [
-	url(r'^index.html/', views.index, name='index'),
+	url(r'^$', views.index, name='index'),
 	url(r'^admin/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
